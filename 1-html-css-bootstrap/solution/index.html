@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ofek Twitter users</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">  
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/tweets.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html"><img src="image/OfekUnit.png" alt="OfekLogo"> OfekTwitter</a>            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="users.html">Users</a>
+                    <a class="nav-link" href="signin.html">Sign in</a>
+                    <a class="nav-link" href="signup.html">Sign up</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container" role="main" >
+            <form class="row my-3">
+                <textarea class="form-control" rows="5" placeholder="tweet text..."></textarea>
+                <input class="btn btn-primary float-right" type="submit" value="Submit">
+            </form>
+
+            <div class="row my-3">
+                <ul class="col tweets list-unstyled">
+                    <li class="media my-3">
+                        <img src="image/1.jpg">
+                        <p class="name">Sir 1 says:</p>
+                        <p>Hello world!</p>
+                    </li>
+                    <li class="media my-3">
+                        <img src="image/4.jpg">
+                        <p class="name">The Honourable 9 says:</p>
+                        <p>Indeed.</p>
+                    </li>
+                    <li class="media my-3">
+                        <img src="image/5.jpg">
+                        <p class="name">Lord 5 says:</p>
+                        <p>Mighty fine!</p>
+                    </li>
+                    <li class="media my-3">
+                        <img src="image/4.jpg">
+                        <p class="name">Rabbi 4 says:</p>
+                        <p>That's not kosher...</p>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="text-muted">Ofek Twitter - with Twitter Bootstrap v4</div>
+            </div>
+        </footer>
+
+    </body>
+</html>

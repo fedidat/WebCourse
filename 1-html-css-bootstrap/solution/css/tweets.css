@@ -1,0 +1,11 @@
+.tweets img {
+    height: 80px;
+}
+
+.tweets .name{
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+}
