@@ -1,0 +1,7 @@
+#userscontainer img, #followeescontainer img {
+    height: 120px;
+}
+
+.hidden {
+    display: none;
+}

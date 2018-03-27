@@ -1,0 +1,17 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "output/app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^8.0.49"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc --project tsconfig.json; node --debug output/app.js;",
+    "supervise": "tsc --project tsconfig.json; supervisor --debug output/app.js;"
+  },
+  "author": "",
+  "license": "ISC"
+}

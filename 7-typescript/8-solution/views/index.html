@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MyTwitter users</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/tweets.css">
+        <script language="javascript" src="jquery.min.js"></script>
+        <script language="javascript" src="jquery.cookie.js"></script>
+        <script language="javascript" src="umd/popper.min.js"></script>
+        <script language="javascript" src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html"><img src="image/logo.png" alt="MyLogo"> MyTwitter</a>            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="users.html">Users</a>
+                    <a class="nav-link" href="signin.html">Sign in</a>
+                    <a class="nav-link" href="signup.html">Sign up</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container" role="main" >
+            <form  class="row m-1 m-md-3">
+                <textarea id="tweetBody" class="mb-2 form-control" rows="5" placeholder="tweet text..." autocomplete="off" onkeydown="if(event.keyCode == 13) submitTweet()"></textarea>
+                <button type="button" class="btn btn-primary float-right" onclick="submitTweet()">Submit</button>
+            </form>
+
+            <div class="row my-3">
+                <ul id="tweets" class="col list-unstyled">
+                </ul>
+            </div>
+        </main>
+
+        <script src="js/global.js"></script>
+        <script src="js/myquery.js"></script>
+        <script src="js/tweet.js"></script>
+    </body>
+</html>

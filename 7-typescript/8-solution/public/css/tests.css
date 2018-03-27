@@ -1,0 +1,11 @@
+.testPassed {
+    background-color: green;
+}
+.testFailed {
+    background-color: red;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 10px; /* Apply cell padding */
+}

@@ -1,0 +1,26 @@
+<div *ngIf="room" class="vwrapper" role="main">
+  <main class="container" role="main">
+    <a routerLink="/mainchat">Back to room list</a>
+    <h5>Welcome to room "{{room.name}}"</h5>
+    <form action="" class="m-3 messageForm row justify-content-center">
+      <div class="input-group">
+        <textarea class="form-control" rows="3" style="resize:none" autocomplete="off" id="message-field" placeholder="Message" #messageBody
+          (keydown.enter)="sendMessage(messageBody.value); messageBody.value=''; false"></textarea>
+        <button class=" btn btn-primary" (click)="sendMessage(messageBody.value); messageBody.value=''">Send</button>
+      </div>
+    </form>
+    <div class="row">
+      <app-userlist class="col-sm-3"></app-userlist>
+      <div id="content" class="col-sm-9 border-dark rounded">
+        <table class="table table-striped" style="table-layout: fixed;">
+          <tbody id="chat">
+            <tr *ngFor="let message of messages" class="row">
+              <td class="col-auto">({{message.date | date: 'dd/M HH:mm'}}) <b>{{message.userid}} said:</b></td>
+              <td class="col-auto" style="word-wrap:break-word">{{message.content}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>

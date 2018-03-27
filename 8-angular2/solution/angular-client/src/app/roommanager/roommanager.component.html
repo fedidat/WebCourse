@@ -1,0 +1,12 @@
+<div class="vwrapper" role="main">
+  <main class="container" role="main">
+    <h3>Rooms</h3>
+    <ul class="rooms list-group">
+      <li *ngFor="let room of rooms" class="list-group-item">
+          <a routerLink="/room/{{room.id}}">
+            <span class="badge">{{room.name}}</span>
+          </a>
+      </li>
+    </ul>
+  </main>
+</div>

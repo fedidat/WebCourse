@@ -1,0 +1,24 @@
+<main class="container" role="main" >
+  <div class="row">
+    <form action="" class="col-md-6 offset-md-3">
+        <fieldset class="group-border">
+            <legend class="group-border">Sign in</legend>
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Username</label>
+                <div class="col-8">
+                    <input class="form-control" type="text" [(ngModel)]="name" name="name" autofocus>
+                    <div class="invalid-feedback" id="username-feedback"></div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Password</label>
+                <div class="col-8">
+                    <input class="form-control" type="text" [(ngModel)]="password" name="password">
+                    <div class="invalid-feedback" id="username-feedback"></div>
+                </div>
+            </div>
+            <button class="btn btn-primary float-right" (click)="signin()">Submit</button>
+        </fieldset>
+    </form>
+  </div>
+<main class="container" role="main" >

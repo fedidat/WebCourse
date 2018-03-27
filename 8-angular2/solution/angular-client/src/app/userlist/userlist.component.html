@@ -1,0 +1,8 @@
+<h6>User list:</h6>
+
+<ul class="users list-group">
+  <li *ngFor="let user of users" class="list-group-item"
+    [ngClass]="{'active': user.id===currentUser}">
+    <span class="badge">{{user.id}}</span>
+  </li>
+</ul>
